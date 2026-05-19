@@ -76,18 +76,38 @@ export const domain = {
         "Next step included",
         "Escalation checked",
         "Owner approval captured",
-        "Reply pack exported"
+        "Reply pack exported",
+        "PII redaction scan completed",
+        "Positive review template selected",
+        "Critical review recovery path drafted",
+        "Channel posting instructions added"
     ],
     "artifacts": [
         "Positive reply pack",
         "Critical review response",
-        "Tone guide"
+        "Tone guide",
+        "PII-safe reply queue",
+        "Owner approval tracker",
+        "Channel posting checklist"
     ],
     "checks": [
         "Critical reviews require escalation check",
         "Owner approval before ready",
-        "No private customer data"
+        "No private customer data",
+        "PII scan required before export",
+        "Critical replies require offline escalation option",
+        "Posting checklist must include reviewer privacy note"
     ],
-    "sampleClient": "Riverside Community Bakery"
+    "sampleClient": "Riverside Community Bakery",
+    "saas": {
+        "personas": ["Review response coach", "Business owner", "Customer service lead"],
+        "stages": [
+            { "name": "Review triage", "goal": "Classify sentiment, severity, privacy risk, and escalation needs.", "rowPatterns": ["sentiment|Severity|PII|Escalation"] },
+            { "name": "Reply drafting", "goal": "Generate owner-voice response drafts with tone cards and next steps.", "rowPatterns": ["Tone|Draft|Positive|Critical"] },
+            { "name": "Approval and posting", "goal": "Capture owner approval and export channel-ready instructions.", "rowPatterns": ["Owner approval|Reply pack|Channel|posting"] }
+        ],
+        "sampleValues": { "primary-goal": "clear a weekly queue of owner-approved review replies" },
+        "sampleRows": { "PII redaction scan completed": "Removed order details, phone numbers, and private appointment notes", "Channel posting instructions added": "Instructions include copy, paste, verify account, and screenshot proof steps" }
+    }
 };
 //# sourceMappingURL=domain.js.map
