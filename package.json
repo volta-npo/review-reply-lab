@@ -1,0 +1,35 @@
+{
+  "name": "@volta-oss/review-reply-lab",
+  "version": "3.0.0",
+  "private": false,
+  "type": "module",
+  "description": "Privacy-first review response drafts that teach owners how to reply with empathy and local voice.",
+  "scripts": {
+    "test": "node --test",
+    "start": "python3 -m http.server 4173",
+    "validate": "node --test",
+    "certify": "node --test test/v3.test.js",
+    "test:all": "node --test"
+  },
+  "keywords": [
+    "digital presence",
+    "digital-equity",
+    "local-first",
+    "oss",
+    "v3-production",
+    "volta"
+  ],
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/volta-npo/08-review-reply-lab.git"
+  },
+  "homepage": "https://volta-npo.github.io/08-review-reply-lab/",
+  "bugs": {
+    "url": "https://github.com/volta-npo/08-review-reply-lab/issues"
+  },
+  "author": "Volta OSS Division <volta.npo@gmail.com>",
+  "engines": {
+    "node": ">=20"
+  }
+}
