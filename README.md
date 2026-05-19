@@ -12,7 +12,7 @@
 
 **Digital Presence** · **No backend. No login. Client data stays local.**
 
-[Live app](https://volta-npo.github.io/08-review-reply-lab/) · [Report an issue](https://github.com/volta-npo/08-review-reply-lab/issues) · [Volta](https://voltanpo.org)
+[Live app](https://volta-npo.github.io/review-reply-lab/) · [Report an issue](https://github.com/volta-npo/review-reply-lab/issues) · [Volta](https://voltanpo.org)
 
 </div>
 
@@ -182,7 +182,7 @@ This repo is designed to be usable as a real OSS product, not just a static demo
 ## 🛠️ Quick start
 
 ```bash
-git clone https://github.com/volta-npo/08-review-reply-lab.git
+git clone https://github.com/volta-npo/review-reply-lab.git
 cd 08-review-reply-lab
 npm install
 npm test

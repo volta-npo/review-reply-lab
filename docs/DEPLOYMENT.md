@@ -6,7 +6,7 @@ This repository is deployable in three supported modes.
 
 The default public deployment is GitHub Pages. The app is static and uses local browser storage.
 
-- URL: https://volta-npo.github.io/08-review-reply-lab/
+- URL: https://volta-npo.github.io/review-reply-lab/
 - Build command: `npm run build`
 - Output: checked-in static assets at repository root and `src/*.js` compiled from TypeScript
 
