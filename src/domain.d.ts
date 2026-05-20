@@ -22,6 +22,24 @@ export declare const domain: {
     rows: string[];
     artifacts: string[];
     checks: string[];
+    modules: {
+        name: string;
+        description: string;
+        metrics: string[];
+        deliverable: string;
+    }[];
+    plays: {
+        name: string;
+        trigger: string;
+        outcome: string;
+    }[];
+    economics: {
+        buyer: string;
+        valueMetric: string;
+        priceHint: string;
+        northStar: string;
+    };
+    exportSuite: string[];
     sampleClient: string;
     saas: {
         personas: string[];
@@ -34,8 +52,18 @@ export declare const domain: {
             "primary-goal": string;
         };
         sampleRows: {
-            "PII redaction scan completed": string;
-            "Channel posting instructions added": string;
+            "Reviews imported/entered": string;
+            "Sentiment/severity tagged": string;
+            "PII/private details removed": string;
+            "Owner voice/tone selected": string;
+            "Positive reply drafted": string;
+            "Critical reply drafted": string;
+            "Escalation rule applied": string;
+            "Owner approval captured": string;
+            "Response SLA target set": string;
+            "Template variants created": string;
+            "Channel formatting checked": string;
+            "Post-response follow-up planned": string;
         };
     };
 };
